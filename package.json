@@ -14,5 +14,8 @@
     "blockchain"
   ],
   "author": "Lee Zamastil",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "solc": "^0.4.17"
+  }
 }
