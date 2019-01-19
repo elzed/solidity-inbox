@@ -16,6 +16,10 @@
   "author": "Lee Zamastil",
   "license": "ISC",
   "dependencies": {
-    "solc": "^0.4.17"
+    "ganache-cli": "^6.2.5",
+    "mocha": "^5.2.0",
+    "solc": "^0.4.17",
+    "web3": "^1.0.0-beta.35",
+    "websocket": "^1.0.28"
   }
 }
