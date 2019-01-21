@@ -10,13 +10,11 @@ const Web3 = require('web3');
 // and tell it to connect to local test network
 const web3 = new Web3(ganache.provider());
 
-beforeEach(() => {
+let accounts;
+beforeEach(async () => {
     // Get a list of all accounts
     // Use the eth module from web3
-    web3.eth.getAccounts()
-        .then(fetchedAccounts => {
-            console.log(fetchedAccounts);
-        })
+    accounts = await web3.eth.getAccounts();
 
     // Use one of those accounts to deploy
     // the contract
@@ -24,5 +22,7 @@ beforeEach(() => {
 });
 
 describe('Inbox', () => {
-    it('should deploy a contract', () => {});
+    it('should deploy a contract', () => {
+        console.log(accounts);
+    });
 });
